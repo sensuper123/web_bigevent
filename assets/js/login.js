@@ -69,9 +69,8 @@ $(function(){
             return layer.msg('登录失败')
           }
           localStorage.setItem('token',res.token)
-          layer.msg(res.message,function(){
-            location.href = "/index.html"
-          })
+          layer.msg(res.message)
+          location.href = '/index.html'
       
         }
       })
